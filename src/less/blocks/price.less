@@ -1,0 +1,162 @@
+.price__inner {
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  background: url('../img/background-table-test-1440.jpg') no-repeat bottom;
+  background-size: auto 100%;
+}
+
+.price__wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;;
+}
+.price-table {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-collapse: separate;
+
+  empty-cells: hide;
+}
+
+.price-table__column-1 {
+  display: none;
+}
+
+.price-table td {
+  min-width: 280px;
+  width: 25%;
+  border: 1px solid #e5e5e5;
+}
+
+.price-table__feature {
+  float: left;
+  margin-left: 25px;
+}
+.price-table__svg {
+  vertical-align: middle;
+  float: right;
+  margin-right: 20px;
+}
+.svg-no {
+  fill: #f25b26;
+}
+
+.svg-yes {
+  fill: #3dc644;
+}
+.price-table__row-2,
+.price-table__row-3,
+.price-table__row-4 {
+  height: 60px;
+
+  background: #fff;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-table__header {
+  height: 100px;
+  text-align: center;
+
+}
+
+.price-table__header td {
+      background: #283645;
+
+      &:nth-child(3) {
+        background: url('../img/hit-ribbon-320.png') no-repeat, #283645;
+
+      }
+}
+
+.price-table__option {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-table__price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+}
+
+.price-table__header:last-child {
+  display: none;
+}
+
+.price-table__control {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+
+  width: 60px;
+}
+.price-table__bullet {
+  justify-content: space-between;
+
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+
+  background: #bec2c7;
+  border: 3px solid #fff;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--active {
+
+
+    height: 12px;
+    width: 12px;
+    display: block;
+
+    border-radius: 50%;
+
+    border: 3px solid #2d3b49;
+    background: #fff;
+  }
+}
+
+@media(min-width: 700px) {
+
+  .price-table td {
+    min-width: 0;
+  }
+  .price__wrap {
+    width: 80%;
+  }
+  .price-table__feature {
+    float: none;
+    margin-left: 0;
+  }
+  :not(.price-table__column-1)>.price-table__feature {
+    display: none;
+  }
+
+  .price-table__svg {
+    vertical-align: middle;
+    float: none;
+    margin-right: 0;
+  }
+
+  .price-table__column-1 {
+    display: table-cell;
+
+  }
+}

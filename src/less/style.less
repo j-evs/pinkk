@@ -1,0 +1,176 @@
+// Nikolay Gromov. Author URI: http://nicothin.ru
+
+@import 'variables.less';
+
+@import 'blocks/normalize.less';
+@import 'blocks/global_scaffolding.less';
+
+
+
+
+
+
+
+.contacts__inner {
+  margin: 0 auto;
+
+  width: 280px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.contacts {
+  margin-top: 45px;
+}
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts__promo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283645;
+}
+
+.contacts__list {
+  margin-top: 40px;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+  &:nth-of-type(1) {
+    order: 1;
+  }
+  &:nth-of-type(2) {
+    order: 3;
+  }
+  &:nth-of-type(3) {
+    order: 2;
+  }
+}
+.contacts__header {
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  text-align: center;
+  color: #283645;
+
+
+
+}
+
+.contacts__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+  text-align: center;
+  color: #d22856;
+
+  text-align: center;
+}
+
+.page-footer {
+  display: none;
+}
+
+@media(min-width: 700px) {
+
+
+  .contacts__inner {
+    width: 620px;
+  }
+
+
+  .contacts__list {
+
+    justify-content: center;
+  }
+
+  .contacts__promo {
+    width: 460px;
+  }
+  .contacts__list {
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+
+  .page-footer {
+    display: block;
+      & path {
+        fill: #d22856;
+      }
+
+    &__wrapper {
+      height: 125px;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .social-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      width: 180px;
+      justify-content: space-between;
+      vertical-align: middle;
+
+      & li {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        position: relative;
+      }
+      &__item {
+        text-decoration: none;
+
+      }
+      &__circle {
+        position: absolute;
+        left: -25px;
+        bottom: -20px;
+      }
+
+    }
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+
+    .contacts__inner {
+      width: auto;
+    }
+
+
+    .contacts__item {
+      &:nth-of-type(1) {
+       order: 1;
+      }
+      &:nth-of-type(2) {
+        order: 2;
+      }
+      &:nth-of-type(3) {
+        order: 3;
+      }
+    }
+}
+@import "blocks/page-header.less";
+@import "blocks/page-promo.less";
+@import "blocks/price.less";

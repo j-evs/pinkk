@@ -1,0 +1,1021 @@
+// Nikolay Gromov. Author URI: http://nicothin.ru
+
+@import 'variables.less';
+
+@import 'blocks/normalize.less';
+@import 'blocks/global_scaffolding.less';
+
+.page-header {
+  background-image: url('/img/background-1@1x.jpg');
+
+  &__wrapper {
+    height: 65px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(0,0,0,.3);
+    z-index: 1000;
+  }
+
+  &__logo-wrap,
+  &__hamburger-icon-wrap {
+    padding: 20px;
+  }
+  &__hamburger-icon{
+    fill: white !important;
+  }
+  &__nav-wrap {
+
+  }
+}
+
+path {
+  fill:white;
+  }
+
+
+.page-header__hamburger-icon-wrap:hover path {
+  fill: #d22856;
+}
+
+.main-nav {
+  width: 100%;
+
+  position: absolute;
+  bottom: -257px;
+  left: 0;
+}
+
+.main-nav_wrap {
+
+}
+.main-nav__list{
+  display: none;
+
+  padding: 0;
+
+  list-style: none;
+
+  text-transform: uppercase;
+
+}
+
+.main-nav__item {
+  height: 60px;
+
+  text-align: center;
+
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid black;
+}
+
+.main-nav__link {
+  display: flex;;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  color: #fff;
+  text-decoration: none;
+
+}
+
+
+.download-promo {
+  height: 390px;
+  background: url('/img/iphone-hand-1.png') no-repeat bottom left;
+}
+.download-promo__inner {
+  margin: 0 auto;
+
+}
+
+.download-promo__wrapper {
+  margin: 0 auto;
+
+}
+.download-promo__title {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 250px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+  color: white;
+
+  text-align: center;
+}
+
+.download-details {
+  margin: 0 auto;
+
+  margin-top: 320px;
+  height: 275px;
+  background: #1d2631;
+}
+.download-details__link {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+
+  display: block;
+  width: 280px;
+  text-align: center;
+
+  text-decoration: none;
+
+}
+
+.download-details_btn {
+  border: 3px solid white;
+  border-radius: 30px;
+
+  padding: 15px 35px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: white;
+
+  &:hover {
+    color: #d22856;
+    border-color: #d22856;
+  }
+}
+
+.download-details__list {
+  padding: 0;
+
+  padding-left: 55px;
+  padding-right: 55px;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.download-details__item {
+  line-height: 60px;
+}
+
+.download-details__item img {
+  vertical-align: middle;;
+}
+
+.download-details__description {
+  margin: 0 auto;
+
+  display: block;
+  width: 280px;
+
+
+  text-align: center;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+
+  color: white;
+
+}
+
+.page-promo {
+  margin-top: 270px;
+}
+
+.page-promo__inner {
+  margin-top: 300px;
+}
+.page-promo__head-item {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 250px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+  color: #1d2631;
+
+  text-align: center;
+}
+
+.page-promo__advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background: url('/img/screen-1-3.png') no-repeat bottom,
+              url('/img/background-advantages-1.jpg') no-repeat bottom;
+
+
+  margin-top: 30px;
+  padding-bottom: 300px;
+}
+
+.page-promo__item {
+
+  flex-basis: 275px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+    &:nth-child(1) {
+      margin-top: 50px;
+    }
+    &:nth-child(4) {
+      display: none;
+    }
+}
+
+.page-promo__img-wrap {
+  display: none;
+}
+
+.page-promo__header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+.page-promo__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.slider-reviews {
+  margin: 0 auto;
+  margin-top: 40px;
+
+  width: 275px;
+  &__quotes {
+    display: none;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    order: 1;
+
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__text {
+    order: 2;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  &__occupation {
+    display: none;
+  }
+}
+.slider-reviews__button {
+  &--left {
+    display: none;
+  }
+  &--right {
+    display: none;
+  }
+}
+.slider-reviews__control {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  width: 60px;
+
+}
+
+.slider-reviews__bullet {
+  justify-content: space-between;
+
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+
+  background: #bec2c7;
+  border: 3px solid #fff;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--active {
+
+
+    height: 12px;
+    width: 12px;
+    display: block;
+
+    border-radius: 50%;
+
+    border: 3px solid #2d3b49;
+    background: #fff;
+  }
+}
+
+.price__inner {
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  background: url('/img/background-table-test-1440.jpg') no-repeat bottom;
+  background-size: auto 100%;
+}
+
+.price__wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+.price-table {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-collapse: separate;
+
+  empty-cells: hide;
+}
+
+.price-table td {
+
+  width: 25%;
+  border: 1px solid #e5e5e5;
+}
+.price-table__svg {
+  vertical-align: middle;
+}
+.svg-no {
+  fill: #f25b26;
+}
+
+.svg-yes {
+  fill: #3dc644;
+}
+.price-table__row-2,
+.price-table__row-3,
+.price-table__row-4 {
+  height: 60px;
+
+  background: #fff;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-table__header {
+  height: 100px;
+  text-align: center;
+
+}
+
+.price-table__header td {
+      background: #283645;
+
+      &:nth-child(3) {
+        background: url('/img/hit-ribbon-320.png') no-repeat, #283645;
+
+      }
+}
+
+.price-table__option {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-table__price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+}
+
+.price-table__header:last-child {
+  display: none;
+}
+
+.price-table__control {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+
+  width: 60px;
+}
+.price-table__bullet {
+  justify-content: space-between;
+
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+
+  background: #bec2c7;
+  border: 3px solid #fff;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--active {
+
+
+    height: 12px;
+    width: 12px;
+    display: block;
+
+    border-radius: 50%;
+
+    border: 3px solid #2d3b49;
+    background: #fff;
+  }
+}
+
+.contacts__inner {
+  margin: 0 auto;
+
+  width: 280px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.contacts {
+  margin-top: 45px;
+}
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts__promo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283645;
+}
+
+.contacts__list {
+  margin-top: 40px;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+  &:nth-of-type(1) {
+    order: 1;
+  }
+  &:nth-of-type(2) {
+    order: 3;
+  }
+  &:nth-of-type(3) {
+    order: 2;
+  }
+}
+.contacts__header {
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  text-align: center;
+  color: #283645;
+
+
+
+}
+
+.contacts__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+  text-align: center;
+  color: #d22856;
+
+  text-align: center;
+}
+
+.page-footer {
+  display: none;
+}
+
+@media(min-width: 700px) {
+    .page-header {
+      background: url('/img/background-2@1x.jpg') no-repeat bottom;
+
+      &__wrapper {
+        height: 110px;
+
+      }
+
+      &__logo-wrap,
+      &__hamburger-icon-wrap {
+        display: flex;
+        align-items: center;
+
+        padding: 20px;
+      }
+      &__hamburger-icon{
+        fill: white !important;
+      }
+      &__nav-wrap {
+      margin: 0;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      }
+    }
+
+  .download-promo {
+    height: 620px;
+    background: url('/img/iphone-hand-2@1x.png') no-repeat bottom ;
+  }
+
+  .download-promo__inner {
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+
+    align-items: center;
+  }
+
+  .download-promo__wrapper {
+    margin: 0 auto;
+    }
+
+  .download-promo__title {
+    margin: 0 auto;
+
+    width: 190px;
+
+
+    font-size: 40px;
+
+
+    }
+
+  .download-details {
+    margin: 0 auto;
+
+
+    height: 275px;
+    background: none;
+  }
+
+  .page-promo {
+    margin: 0;
+  }
+
+  .page-promo__intro {
+    margin-top: 60px;
+  }
+  .page-promo__inner {
+    margin: 0;
+  }
+
+  .page-promo__head-item {
+    margin: 0 auto;
+    width: 620px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+
+  }
+
+  .page-promo__advantages {
+    height: 1000px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-image: url('/img/iphone-screen-2-3@1x.png'), url('/img/background-advantages-2.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 100% 500px;
+    background-position: 40px 50px, 100% 50px;
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+  .page-promo__item {
+    width: 320px;
+
+    flex-basis: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    text-align: left;
+
+    margin-bottom: 40px;
+    margin-right: 40px;
+      &:nth-child(1) {
+        margin-top: 50px;
+      }
+      &:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        width: 620px;
+        height: 300px;
+
+
+
+        margin-top: 50px;
+
+        & .page-promo__timer {
+          order: 1;
+        }
+
+        & .page-promo__header {
+          order: 2;
+          width: 300px;
+
+        }
+        & .page-promo__text {
+          order: 3;
+          width: 300px;
+        }
+        & .page-promo__link {
+          order: 4;
+          width: 300px;
+        }
+        & .page-promo__img-wrap {
+          display: block;
+        }
+      }
+
+  }
+  .page-promo__header {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+  }
+
+  .page-promo__text {
+      padding: 0;
+      margin: 0;
+
+  }
+
+  .page-promo__timer {
+    fill: #eeeeee;
+  }
+  .timer__text {
+    font-size: 105px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+    fill: #d22856;
+  }
+
+  .slider-reviews {
+    width: 620px;
+
+    &__header {
+      order: 2;
+    }
+
+    &__text {
+      order: 1;
+
+    }
+    &__occupation {
+      order: 3;
+      display: block;
+      width: 480px;
+    }
+  }
+
+  .contacts__inner {
+    width: 620px;
+  }
+
+
+  .contacts__list {
+
+    justify-content: center;
+  }
+
+  .contacts__promo {
+    width: 460px;
+  }
+  .contacts__list {
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+
+  .page-footer {
+    display: block;
+      & path {
+        fill: #d22856;
+      }
+
+    &__wrapper {
+      height: 125px;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .social-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      width: 180px;
+      justify-content: space-between;
+      vertical-align: middle;
+
+      & li {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        position: relative;
+      }
+      &__item {
+        text-decoration: none;
+
+      }
+      &__circle {
+        position: absolute;
+        left: -25px;
+        bottom: -20px;
+      }
+
+    }
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .page-header {
+    background: url('/img/background-2@1x.jpg') no-repeat bottom;
+
+    &__wrapper {
+      justify-content: space-around;;
+    }
+
+    &__hamburger-icon-wrap {
+      display: none;
+
+    }
+
+    &__nav-wrap {
+
+
+    width: 605px;
+    }
+  }
+  .main-nav {
+    position: static;
+  }
+
+  .main-nav__list{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    text-transform: none;
+
+    & li {
+      display: inline;
+    }
+
+  }
+
+  .main-nav__item {
+    height: initial;
+
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .main-nav__link {
+    display: inline;
+  }
+
+  .download-promo__wrapper {
+    width: 320px;
+    }
+
+    .page-promo__advantages {
+      height: 1000px;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      background-image: url('/img/background-advantages-2.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 500px;
+      background-position: 100% 50px;
+
+    }
+    .page-promo__img-wrap {
+      display: block;
+      width: 190px;
+      height: 300px;
+    }
+    .page-promo__item {
+      width: 300px;
+
+      flex-basis: auto;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      margin: 0;
+
+      & .page-promo__header {
+        order: 2;
+      }
+
+      & .page-promo__img-wrap {
+        order: 1;
+      }
+
+      & .page-promo__text {
+        order: 3;
+      }
+
+
+        &:nth-child(1) {
+          margin: 0;
+        }
+        &:nth-child(4) {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
+
+          text-align: left;
+          width: 950px;
+          height: 300px;
+
+
+
+          margin-top: 50px;
+
+          & .page-promo__timer {
+            order: 1;
+          }
+
+          & .page-promo__header {
+            order: 2;
+            width: 340px;
+
+          }
+          & .page-promo__text {
+            order: 3;
+            width: 540px;
+          }
+          & .page-promo__link {
+            order: 4;
+            width: 300px;
+          }
+          & .page-promo__img-wrap {
+            display: block;
+          }
+        }
+
+    }
+    .page-promo__header {
+      width: 220px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 24px;
+
+    }
+
+    .page-promo__text {
+      width: 240px;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+
+    }
+
+    .page-promo__timer {
+      fill: #eeeeee;
+    }
+    .timer__text {
+      font-size: 105px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+
+      fill: #d22856;
+    }
+    .slider-reviews {
+      position: relative;
+      &__quotes {
+        display: block;
+          & path {
+            fill: #efefef;
+          }
+        }
+      &__control {
+        display: none;
+      }
+      &__button--left {
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        left: -10%;
+
+        font-size: 50px;
+        color: #efefef;
+
+        cursor: pointer;
+      }
+      &__button--right {
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: -10%;
+
+        font-size: 50px;
+        color: #efefef;
+
+        cursor: pointer;
+      }
+    }
+
+    .contacts__inner {
+      width: auto;
+    }
+
+
+    .contacts__item {
+      &:nth-of-type(1) {
+       order: 1;
+      }
+      &:nth-of-type(2) {
+        order: 2;
+      }
+      &:nth-of-type(3) {
+        order: 3;
+      }
+    }
+}

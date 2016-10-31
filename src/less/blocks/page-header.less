@@ -1,0 +1,323 @@
+.page-header {
+  background-image: url('../img/background-1@1x.jpg');
+
+  &__wrapper {
+    height: 65px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(0,0,0,.3);
+    z-index: 1000;
+  }
+
+  &__logo-wrap,
+  &__hamburger-icon-wrap {
+    padding: 20px;
+  }
+  &__hamburger-icon{
+    fill: white !important;
+  }
+  &__nav-wrap {
+
+  }
+}
+
+path {
+  fill:white;
+  }
+
+
+.page-header__hamburger-icon-wrap:hover path {
+  fill: #d22856;
+}
+
+.main-nav {
+  width: 100%;
+
+  position: absolute;
+  bottom: -257px;
+  left: 0;
+}
+
+.main-nav_wrap {
+
+}
+.main-nav__list{
+  display: none;
+
+  padding: 0;
+
+  list-style: none;
+
+  text-transform: uppercase;
+
+}
+
+.main-nav__item {
+  height: 60px;
+
+  text-align: center;
+
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid black;
+}
+
+.main-nav__link {
+  display: flex;;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  color: #fff;
+  text-decoration: none;
+
+}
+
+
+.download-promo {
+  height: 390px;
+  background: url('../img/iphone-hand-1.png') no-repeat bottom left;
+}
+.download-promo__inner {
+  margin: 0 auto;
+
+}
+
+.download-promo__wrapper {
+  margin: 0 auto;
+
+}
+.download-promo__title {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 250px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+  color: white;
+
+  text-align: center;
+}
+
+.download-details {
+  margin: 0 auto;
+
+  margin-top: 320px;
+  height: 275px;
+  background: #1d2631;
+}
+.download-details__link {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+
+  display: block;
+  width: 280px;
+  text-align: center;
+
+  text-decoration: none;
+
+}
+
+.download-details_btn {
+  border: 3px solid white;
+  border-radius: 30px;
+
+  padding: 15px 35px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: white;
+
+  &:hover {
+    color: #d22856;
+    border-color: #d22856;
+  }
+}
+
+.download-details__list {
+  padding: 0;
+
+  padding-left: 55px;
+  padding-right: 55px;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.download-details__item {
+  line-height: 60px;
+}
+
+.download-details__item img {
+  vertical-align: middle;;
+}
+
+.download-details__description {
+  margin: 0 auto;
+
+  display: block;
+  width: 280px;
+
+
+  text-align: center;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+
+  color: white;
+
+}
+
+@media(min-width: 700px) {
+    .page-header {
+      background: url('../img/background-2@1x.jpg') no-repeat bottom;
+
+      &__wrapper {
+        height: 110px;
+
+      }
+
+      &__logo-wrap,
+      &__hamburger-icon-wrap {
+        display: flex;
+        align-items: center;
+
+        padding: 20px;
+      }
+      &__hamburger-icon{
+        fill: white !important;
+      }
+      &__nav-wrap {
+      margin: 0;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      }
+    }
+
+  .download-promo {
+    height: 620px;
+    background: url('../img/iphone-hand-2@1x.png') no-repeat bottom ;
+  }
+
+  .download-promo__inner {
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .download-promo__wrapper {
+    margin: 0 auto;
+    }
+
+  .download-promo__title {
+    margin: 0 auto;
+    width: 190px;
+    font-size: 40px;
+    }
+
+  .download-details {
+    margin: 0 auto;
+    height: 275px;
+    background: none;
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .page-header {
+    background: url('../img/background-2@1x.jpg') no-repeat bottom;
+    background-size: cover;
+
+    &__wrapper {
+      justify-content: space-around;;
+    }
+
+    &__hamburger-icon-wrap {
+      display: none;
+    }
+
+    &__nav-wrap {
+    width: 605px;
+    }
+
+  }
+  .main-nav {
+    position: static;
+  }
+
+  .main-nav__list{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    text-transform: none;
+
+    & li {
+      display: inline;
+    }
+
+  }
+
+  .main-nav__item {
+    height: initial;
+
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+
+    background-color: transparent;
+    border: 0;
+  }
+
+  .main-nav__link {
+    display: inline;
+  }
+
+  .download-promo {
+    height: 750px;
+    background: url('../img/iphone-hand-2@1x.png') no-repeat bottom;
+
+      &__wrapper {
+        width: 320px;
+      }
+
+      &__title {
+        width: 300px;
+        font-size: 50px;
+      }
+  }
+
+  .download-details__link {
+    padding-top: 50px;
+    margin-bottom: 70px;
+  }
+  .download-details__description {
+    width: 300px;
+    font-size: 18px;
+  }
+
+}
